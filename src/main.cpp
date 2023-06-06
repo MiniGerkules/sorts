@@ -56,8 +56,11 @@ int main(void) {
     time = GetTimeOfExecution(Sorts::BubbleSort, arr);
 #elif defined(QUICK)
     time = GetTimeOfExecution(Sorts::ReqursiveQuickSort, arr);
+#elif defined(INSERTION)
+    time = GetTimeOfExecution(Sorts::InsertionSort, arr);
 #else
-    return EXIT_SUCCESS;
+    std::cerr << "ERROR! You didn't choose sort!\n";
+    return EXIT_FAILURE;
 #endif
 
     if (!time.has_value()) {

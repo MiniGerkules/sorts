@@ -7,6 +7,7 @@ set(SOURCES
     src/sorts/sorts.hpp
 
     src/sorts/bubble_sort.cpp
+    src/sorts/insertion_sort.cpp
     src/sorts/reqursive_quick_sort.cpp
 )
 
@@ -17,4 +18,6 @@ if(DEFINED BUBBLE)
     target_compile_options(${PROJECT_NAME} PRIVATE -DBUBBLE)
 elseif(DEFINED QUICK)
     target_compile_options(${PROJECT_NAME} PRIVATE -DQUICK)
+elseif(DEFINED INSERTION)
+    target_compile_options(${PROJECT_NAME} PRIVATE -DINSERTION)
 endif()
