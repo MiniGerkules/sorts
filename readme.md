@@ -17,3 +17,7 @@ cmake -DQUICK=ON ../
 After it you will turn on quick sort. You can turn on only one sort at the moment.
 If you activate more than 1, program will be use the first mentioned sort from
 [implemented](#implemented-sorts).
+
+# Generate data
+For generating random data you can use [generator from this repository](data_generator.c).
+It creates `data.txt` file with required amount of random numbers.
