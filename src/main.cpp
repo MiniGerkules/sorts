@@ -70,7 +70,7 @@ int main(void) {
 
     std::cerr << "Time of execution = " << time.value() << " ms\n";
     std::cout << '[';
-    for (size_t i = 0, endI = arr.size() - 1; i < endI; ++i)
+    for (size_t i = 0, end_i = arr.size() - 1; i < end_i; ++i)
         std::cout << arr[i] << ", ";
     std::cout << arr.back() << "]\n";
 
