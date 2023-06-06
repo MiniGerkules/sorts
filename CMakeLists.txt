@@ -3,10 +3,11 @@ project(sorts)
 
 set(SOURCES
     src/main.cpp
-    src/sorts.hpp
 
-    src/bubble_sort.cpp
-    src/reqursive_quick_sort.cpp
+    src/sorts/sorts.hpp
+
+    src/sorts/bubble_sort.cpp
+    src/sorts/reqursive_quick_sort.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})

@@ -4,7 +4,7 @@
 #include <functional>
 #include <time.h>
 
-#include "sorts.hpp"
+#include "sorts/sorts.hpp"
 
 namespace {
     const char *file_name = "data.txt";
