@@ -14,10 +14,14 @@ set(SOURCES
 add_executable(${PROJECT_NAME} ${SOURCES})
 target_compile_options(${PROJECT_NAME} PRIVATE -Ofast -march=native -std=c++17)
 
-if(DEFINED BUBBLE)
+option(BUBBLE OFF)          # Variable to turn on bubble sort
+option(INSERTION OFF)       # Variable to turn on insertion sort
+option(QUICK OFF)           # Variable to turn on quick sort
+
+if(BUBBLE)
     target_compile_options(${PROJECT_NAME} PRIVATE -DBUBBLE)
-elseif(DEFINED QUICK)
-    target_compile_options(${PROJECT_NAME} PRIVATE -DQUICK)
-elseif(DEFINED INSERTION)
+elseif(INSERTION)
     target_compile_options(${PROJECT_NAME} PRIVATE -DINSERTION)
+elseif(QUICK)
+    target_compile_options(${PROJECT_NAME} PRIVATE -DQUICK)
 endif()
