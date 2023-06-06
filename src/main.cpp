@@ -54,6 +54,8 @@ int main(void) {
 
 #if defined(BUBBLE)
     time = GetTimeOfExecution(Sorts::BubbleSort, arr);
+#elif defined(QUICK)
+    time = GetTimeOfExecution(Sorts::ReqursiveQuickSort, arr);
 #else
     return EXIT_SUCCESS;
 #endif
