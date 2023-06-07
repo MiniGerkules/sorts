@@ -42,5 +42,7 @@ namespace {
 }
 
 void Sorts::ReqursiveQuickSort(std::vector<int> &arr) {
+    if (arr.size() < 2) return;
+
     ::ReqursiveQuickSort(arr, 0, arr.size() - 1);
 }
