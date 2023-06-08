@@ -54,10 +54,10 @@ int main(void) {
 
 #if defined(BUBBLE)
     time = GetTimeOfExecution(Sorts::BubbleSort, arr);
-#elif defined(QUICK)
-    time = GetTimeOfExecution(Sorts::ReqursiveQuickSort, arr);
 #elif defined(INSERTION)
     time = GetTimeOfExecution(Sorts::InsertionSort, arr);
+#elif defined(QUICK)
+    time = GetTimeOfExecution(Sorts::ReqursiveQuickSort, arr);
 #elif defined(MERGE)
     time = GetTimeOfExecution(Sorts::ReqursiveMergeSort, arr);
 #else
