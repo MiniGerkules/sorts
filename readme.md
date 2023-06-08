@@ -6,6 +6,7 @@ The following sorts are now implemented:
 1. Bubble sort,
 2. Insertion sort,
 3. Quick sort.
+4. Merge sort.
 
 # Usage
 To use one of them you should set variable for cmake. For example,
