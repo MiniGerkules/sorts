@@ -58,6 +58,8 @@ int main(void) {
     time = GetTimeOfExecution(Sorts::ReqursiveQuickSort, arr);
 #elif defined(INSERTION)
     time = GetTimeOfExecution(Sorts::InsertionSort, arr);
+#elif defined(MERGE)
+    time = GetTimeOfExecution(Sorts::ReqursiveMergeSort, arr);
 #else
     std::cerr << "ERROR! You didn't choose sort!\n";
     return EXIT_FAILURE;

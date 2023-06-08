@@ -6,4 +6,5 @@ namespace Sorts {
     void InsertionSort(std::vector<int> &arr);
 
     void ReqursiveQuickSort(std::vector<int> &arr);
+    void ReqursiveMergeSort(std::vector<int> &arr);
 }

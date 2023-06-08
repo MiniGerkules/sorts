@@ -9,6 +9,7 @@ set(SOURCES
     src/sorts/bubble_sort.cpp
     src/sorts/insertion_sort.cpp
     src/sorts/reqursive_quick_sort.cpp
+    src/sorts/reqursive_merge_sort.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -24,4 +25,6 @@ elseif(INSERTION)
     target_compile_options(${PROJECT_NAME} PRIVATE -DINSERTION)
 elseif(QUICK)
     target_compile_options(${PROJECT_NAME} PRIVATE -DQUICK)
+elseif(MERGE)
+    target_compile_options(${PROJECT_NAME} PRIVATE -DMERGE)
 endif()
